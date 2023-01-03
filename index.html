@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>weather forecast</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="js/domElements.js"></script>
+  <script defer src="js/index.js"></script>
+  <script defer src="js/localStorage.js"></script>
+  <script defer src="js/searchLocation.js"></script>
+</head>
+<body class="body">
+  <header class="header">
+    <nav class="nav-bar">
+      <img class="favicon" src="img/favicon.svg" alt="favicon">
+      <h1 class="title">Weather forecast...</h1>
+      <form class="input-search">
+        <input  class="input" type="text" id="searchLocation" placeholder="Search location ...">
+      </form>
+    </nav> 
+  </header>
+  
+  <main class="main">
+    <div class="main-background">
+      <div class="main forecast ">
+        <div class="top">
+          <div>
+             <img class="icon-location" src="icon/icon-location.png" alt="icon location">
+             <p class="city-name"></p>
+          </div>
+          <p class="current-time">Current time</p>
+        </div>
+        <div class="main-part">
+          <div class="flex-left">
+            <p class="text-inner week-day">Current day week</p>
+            <span class="item-value">
+            <img class="icon-inner" src="icon/icon-speedwind.png" alt="icon wind speed">
+            <span class="text-inner wind-speed"></span>
+            </span>
+            <span class="item-value">
+            <img class="icon-inner" src="icon/icon-humidity.png" alt="icon humidity">
+            <span class="text-inner humidity"></span>
+            </span>
+            <span class="item-value">
+            <img  class="icon-inner" src="icon/icon-temp.png" alt="'icon temp">
+            <span class="text-inner airTemp"></span>
+            </span>
+          </div>
+          <div class="flex-right">
+             <img class="icon-precipitation" src="icon/ICON-API.png" alt="icon precipitation">
+             <p class="namePrecipitation">name precipitation</p>
+             <p class=" text-inner textJoke">There is no bad weather only bad clothing.. Swedish Proverb.</p>
+          </div>
+        </div>
+      </div>    
+      <div class="forecast weekly"></div>
+    </div>
+   <div class="part-storage"></div>
+    
+ </main>
+ 
+ </body>
+</html>

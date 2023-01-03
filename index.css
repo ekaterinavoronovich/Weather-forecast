@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Zhizn";
+	src: url('fonts/Zhizn.otf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Engine";
+	src: url('fonts/LEngineer-Regular.otf') format('truetype');
+}
+
+.main-background {
+  width: 100%;
+  height: 100%;
+  background: url('img/background-image.768.jpg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+}
+
+.nav-bar{
+  width: 100%;
+  height: auto;
+  background-color:#98d2f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow:auto;
+}
+
+.favicon {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.title {
+  font-family: 'Engine';
+  font-size: 52px;
+  display: block;
+}
+
+.input {
+  height: 68px;
+  outline: none;
+  border: 0;
+  padding-left: 68px ;
+  font-family:"Zhizn" ;
+  font-size: 22px;
+  background: transparent;
+  background-image: url('icon/favicon-sherch.png');
+  background-position:1px 1px;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(34, 32, 32);
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.textJoke{
+  max-width:200px;
+  height:150px;
+  font-family: "Engine";
+  font-size: 22px;
+  opacity: 0.96;
+  margin: 0 auto 0 auto;
+}
+
+.forecast {
+  min-width: 360px;
+  border-radius: 25px;
+  opacity: 0.96;
+  font-family: 'Zhizn';
+  font-size: 25px;
+  padding: 3%;
+}
+
+.main{
+background-color:#98d2f1;
+}
+
+.IconDaily {
+  grid-area: 2/1/3/2;
+}
+
+.IconNight {
+  grid-area: 2/4/3/4; 
+}
+
+.top {
+  font-family: 'Engine';
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.city-name {
+  display: inline;
+}
+
+.icon-inner{
+ width: 65px;
+ float: left;
+}
+
+.main-part{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+}
+
+.icon-precipitation {
+ opacity: 1; 
+}
+
+.item-value {
+  margin: 5%;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border-radius: 25px;
+}
+
+.weekly :first-child {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.weekly :last-child {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.week-forecast {
+  list-style-type:none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(152, 210, 241) 47%, rgb(14, 82, 84));
+}
+
+.text-inner {
+  margin: 15px;
+}
+
+.temp-forecast-daily {
+  grid-area:2/2/3/3 ;
+  font-size: 16px;
+}
+
+.date-forecast {
+  grid-area: 1/1/2/5;
+  text-align: center;
+ 
+}
+.temp-forecast-night {
+  grid-area:2/3/3/4 ;
+  font-size: 16px;
+  text-align: end;
+}
+
+.part-storage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.localstoreg-item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:5px;
+  font-family: "Engine"; 
+  font-size: 1.5rem;
+}
+
+.btn-delet {
+  border-radius: 50%;
+  background-color:rgb(208, 77, 77) ;
+  border: none;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+ }
+
+.modal {
+  font-size: 1.5rem;
+  font-family: "Engine";
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  opacity:0.90; 
+  background-image:url('img/35754.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid rgb(12, 6, 6);
+  border-radius: 25px;
+  width: 50%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  width: 30px;
+  color: #eeeeee;
+  background-color: #1c87c9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes glowing {
+  0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+  100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  }
+  .close {
+  animation: glowing 1300ms infinite;
+  }
